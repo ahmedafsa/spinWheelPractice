@@ -18,7 +18,7 @@ let matches = {};
 // GUI Interactions
 // -------------------------
 
-const showItemAndRemoveItem = function (item) {
+const displayItems = function (item) {
   // CREATE Item Elements
   const itemDiv = document.createElement("div");
   const itemName = document.createElement("p");
@@ -103,7 +103,7 @@ const addItem = function () {
   if (item) {
     bowl.push(item);
     inputItem.value = "";
-    showItemAndRemoveItem(item);
+    displayItems(item);
   }
   itemsNumber.textContent = bowl.length;
 };
@@ -148,6 +148,13 @@ function spin() {
     addToMatch(i, chosenPlayer1, chosenPlayer2);
 
     i++;
+  }
+  if (bowl.length === 1) {
+    const chosenPlayer1 = getPlayer();
+    removePlayer(chosenPlayer1);
+    const chosenPlayer2 = "—";
+    bowl.splice(bowl.indexOf("—"), 1);
+    addToMatch(i, chosenPlayer1, chosenPlayer2);
   }
   itemsNumber.textContent = bowl.length;
   showMatches();
