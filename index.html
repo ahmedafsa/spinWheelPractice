@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Ahmed Afsa" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="images/favicon.webp" type="image/x-icon" />
+    <title>Spin Script</title>
+  </head>
+  <body>
+    <main>
+      <h1>Spin and Match</h1>
+
+      <div class="grid-container">
+        <div class="left-side">
+          <h2>MATCHES</h2>
+          <div class="matches-container"></div>
+        </div>
+
+        <div class="right-side">
+          <div class="controls-container">
+            <input type="text" class="add-item-field" />
+            <button class="control-btn btn-add">
+              <ion-icon name="add" class="add-icon"></ion-icon>
+            </button>
+            <button class="control-btn btn-roll">
+              <ion-icon name="dice-outline"></ion-icon>
+            </button>
+          </div>
+
+          <div class="items-container">
+            <h2 class="players">Players/Teams</h2>
+            <p class="items-number">0</p>
+            <!--
+          <div class="item-container item-container--0">
+            <p class="item-name item-name--0">Ahmed Mohamed</p>
+            <button class="btn-remove btn-remove--0">
+              <ion-icon name="close" class="remove-icon icon"></ion-icon>
+            </button>
+          </div>
+          <div class="item-container item-container--1">
+            <p class="item-name item-name--1">Khaled</p>
+            <button class="btn-remove btn-remove--1">
+              <ion-icon name="close" class="remove-icon icon"></ion-icon>
+            </button>
+          </div>
+          --></div>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+
+    <!-- ICONS -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
